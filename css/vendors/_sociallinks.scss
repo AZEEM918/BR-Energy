@@ -1,0 +1,30 @@
+.social-links{
+    @extend %listreset;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    gap: 20px;
+
+    li{
+        display: inline-block;
+        vertical-align: top;
+        letter-spacing: 0;
+    }
+
+    a{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+            i{
+                color: $secondary-color;
+            }
+        }
+        i{
+            font-size: 24px;
+            display: block;
+            color: #fff;
+        }
+    }
+}

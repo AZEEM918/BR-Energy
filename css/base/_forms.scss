@@ -1,0 +1,93 @@
+// forms
+
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+.form-group{
+  margin: 0 0 15px;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+input[type='url'],
+input[type='date'],
+textarea,
+.form-select,
+select{
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  padding: 10px 20px;
+  height: 48px;
+  line-height: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: capitalize;
+  outline: none;
+  background-color: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  border-radius: 5px;
+  color: #777777;
+
+  // &:hover {
+
+  // }
+
+  &:focus {
+    border-color: $secondary-color;
+    box-shadow: none;
+    color: #777777;
+    background: #fff;
+    outline: none;
+  }
+
+  @include placeholder {
+    color: #777777;
+  }
+}
+label{
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+}
+
+select {
+  -webkit-border-radius: 0;
+}
+
+textarea {
+  resize: none;
+  vertical-align: top;
+  height: 118px;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  cursor: pointer;
+}
+
+
+.form-select,
+select{
+  background-image: url(../images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+  background-size: 18px;
+}
